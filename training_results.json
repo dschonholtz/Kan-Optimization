@@ -1,0 +1,162 @@
+{
+    "KAN Linear 64 hidden": [
+        {
+            "epoch": 1,
+            "val_loss": 0.2241814390097739,
+            "val_accuracy": 0.9340167197452229,
+            "training_time": 10.32167673110962
+        },
+        {
+            "epoch": 2,
+            "val_loss": 0.1611785340407614,
+            "val_accuracy": 0.9536226114649682,
+            "training_time": 20.213414907455444
+        },
+        {
+            "epoch": 3,
+            "val_loss": 0.132108964866834,
+            "val_accuracy": 0.9589968152866242,
+            "training_time": 30.098662853240967
+        },
+        {
+            "epoch": 4,
+            "val_loss": 0.11717533205701097,
+            "val_accuracy": 0.9638734076433121,
+            "training_time": 40.02291464805603
+        },
+        {
+            "epoch": 5,
+            "val_loss": 0.10751841688946863,
+            "val_accuracy": 0.9674562101910829,
+            "training_time": 49.86886501312256
+        }
+    ],
+    "KAN Linear 16 hidden": [
+        {
+            "epoch": 1,
+            "val_loss": 0.27492236423715477,
+            "val_accuracy": 0.9197850318471338,
+            "training_time": 10.59664011001587
+        },
+        {
+            "epoch": 2,
+            "val_loss": 0.2287119668344878,
+            "val_accuracy": 0.9349124203821656,
+            "training_time": 20.415863037109375
+        },
+        {
+            "epoch": 3,
+            "val_loss": 0.22036452457949424,
+            "val_accuracy": 0.9372014331210191,
+            "training_time": 30.10646414756775
+        },
+        {
+            "epoch": 4,
+            "val_loss": 0.20099437136238643,
+            "val_accuracy": 0.9422770700636943,
+            "training_time": 39.932958126068115
+        },
+        {
+            "epoch": 5,
+            "val_loss": 0.19824809952977168,
+            "val_accuracy": 0.9421775477707006,
+            "training_time": 49.75478720664978
+        }
+    ],
+    "MLP Linear 64 Hidden": [
+        {
+            "epoch": 1,
+            "val_loss": 0.30314107075523417,
+            "val_accuracy": 0.9115246815286624,
+            "training_time": 6.488251209259033
+        },
+        {
+            "epoch": 2,
+            "val_loss": 0.22096579732480132,
+            "val_accuracy": 0.9344148089171974,
+            "training_time": 12.1114661693573
+        },
+        {
+            "epoch": 3,
+            "val_loss": 0.1800667069864216,
+            "val_accuracy": 0.9463574840764332,
+            "training_time": 17.72799324989319
+        },
+        {
+            "epoch": 4,
+            "val_loss": 0.16105199017959415,
+            "val_accuracy": 0.9530254777070064,
+            "training_time": 23.33025813102722
+        },
+        {
+            "epoch": 5,
+            "val_loss": 0.1446869332183176,
+            "val_accuracy": 0.9570063694267515,
+            "training_time": 28.96044397354126
+        }
+    ],
+    "MLP Linear 16 Hidden": [
+        {
+            "epoch": 1,
+            "val_loss": 0.34071520693410356,
+            "val_accuracy": 0.8969944267515924,
+            "training_time": 5.741365909576416
+        },
+        {
+            "epoch": 2,
+            "val_loss": 0.3090681010489441,
+            "val_accuracy": 0.908937101910828,
+            "training_time": 11.310401916503906
+        },
+        {
+            "epoch": 3,
+            "val_loss": 0.27680911174767714,
+            "val_accuracy": 0.92078025477707,
+            "training_time": 16.82796597480774
+        },
+        {
+            "epoch": 4,
+            "val_loss": 0.27358373160812127,
+            "val_accuracy": 0.9200835987261147,
+            "training_time": 22.381364822387695
+        },
+        {
+            "epoch": 5,
+            "val_loss": 0.26357448032232605,
+            "val_accuracy": 0.9254578025477707,
+            "training_time": 27.937169790267944
+        }
+    ],
+    "KAN Linear 8 Hidden": [
+        {
+            "epoch": 1,
+            "val_loss": 0.36114709679583074,
+            "val_accuracy": 0.8961982484076433,
+            "training_time": 12.121218919754028
+        },
+        {
+            "epoch": 2,
+            "val_loss": 0.31275326177288015,
+            "val_accuracy": 0.9137141719745223,
+            "training_time": 23.76790690422058
+        },
+        {
+            "epoch": 3,
+            "val_loss": 0.29160846644051513,
+            "val_accuracy": 0.9188893312101911,
+            "training_time": 35.526021003723145
+        },
+        {
+            "epoch": 4,
+            "val_loss": 0.27901657133297936,
+            "val_accuracy": 0.9226711783439491,
+            "training_time": 47.544333934783936
+        },
+        {
+            "epoch": 5,
+            "val_loss": 0.27351901746669394,
+            "val_accuracy": 0.923765923566879,
+            "training_time": 59.65982699394226
+        }
+    ]
+}

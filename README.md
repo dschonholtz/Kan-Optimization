@@ -1,3 +1,23 @@
+# Notes from Doug
+
+I did some basic profiling and playing here. 
+It seems like we are now only 2x faster than a pytorch linear stacked set of layers which is very impressive!
+
+It looks like the long leg now is b-splines in the forward pass
+
+The backprop process seems to take only 6 seconds on my mac compared to the 12 for the forward passes. Which is wild!
+
+This makes adopting the fourier transform here: https://github.com/GistNoesis/FourierKAN/blob/main/fftKAN.py
+
+Suddenly sound very appealing as that should be much more performant. However, the author there does note there is some degradation in core performance.
+
+I still don't fully understand this algorithm, so I think I might need to do that before I go adopt the fourier version. But it is starting to seem possible that we might get to near MLP performance!
+
+5475    0.023    0.000   12.007    0.002 /Users/douglasschonholtz/Documents/Research/efficient-kan/src/efficient_kan/kan.py:269(forward)
+    10950    0.374    0.000   11.936    0.001 /Users/douglasschonholtz/Documents/Research/efficient-kan/src/efficient_kan/kan.py:153(forward)
+   377385   10.126    0.000   10.126    0.000 {method 'to' of 'torch._C.TensorBase' objects}
+    10952    9.623    0.001    9.934    0.001 /Users/douglasschonholtz/Documents/Research/efficient-kan/src/efficient_kan/kan.py:78(b_splines)
+
 # An Efficient Implementation of Kolmogorov-Arnold Network
 
 This repository contains an efficient implementation of Kolmogorov-Arnold Network (KAN).
