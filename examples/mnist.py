@@ -1,4 +1,5 @@
 from efficient_kan import KAN
+from efficient_kan.kanvolution import Kanv2d
 
 # Train on MNIST
 import torch
@@ -41,7 +42,7 @@ trainloader = DataLoader(trainset, batch_size=64, shuffle=True)
 valloader = DataLoader(valset, batch_size=64, shuffle=False)
 
 # Define model
-model = KAN([28 * 28, 8, 10]) #SimpleMLP()
+model = KAN([28 * 28, 8, 10]) #SimpleMLP() # kanv2d?
 
 device = torch.device("cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu"))
 model.to(device)
@@ -97,7 +98,7 @@ for epoch in range(num_epochs):
             results = json.load(f)
     except FileNotFoundError:
         results = {}
-    title = "KAN Linear 8 Hidden"
+    title = "KANvolution kernel of 3 stride 1"
     if title not in results:
         results[title] = []
 
